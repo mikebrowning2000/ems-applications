@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMS Applications</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="application">
+            <!-- Application Icon Section  -->
+            <div class="app-icon" id="narrativeGenIcn">
+                <div class="app-icon-image" >
+                    <svg xmlns="http://www.w3.org/2000/svg" height= "32px"fill="currentColor" class="bi bi-file-medical" viewBox="0 0 16 16">
+                        <path d="M8.5 4.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L7 6l-.549.317a.5.5 0 1 0 .5.866l.549-.317V7.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L9 6l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V4.5zM5.5 9a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+                      </svg>
+                </div>
+                <div class="app-icon-text">
+                    Narrative Generator
+                </div>
+            </div> <!-- end app-icon div -->
+            
+            <!-- Application Window Section -->
+
+            <div class="window" id="narrGenWindow">
+                <div class="window-titlebar">
+                    <p>Narrative Generator</p>
+                    <button class="cls-btn" id="narrGenCls">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                          </svg>
+                    </button>
+                </div>
+                <div class="window-content">
+                    <form id="narrGenForm" action="">
+                        <div class="formSelector">
+                            <button id="bls">BLS</button>
+                            <button id="als">ALS</button>
+                        </div>
+                        
+                        <div class="form-div">
+                            
+                            <input type="text" name="" id="Ref" placeholder="Referring">
+                            <input type="text" name="" id="Ref" placeholder="Destination">
+                        </div>
+                        <div class="form-div">
+                            <input type="number" name="" id="age">
+                            <select name="" id="ageType">
+                                <option value="y">Year</option>
+                                <option value="m">Month</option>                                
+                                <option value="d">Day</option>
+                            </select>
+                            <select name="" id="sex">
+                                <option value="">Sex</option>
+                                <option value="M">Male</option>
+                                <option value="F">Female</option>
+                            </select>
+                            <input type="text" name="" id="chiefComplaint" placeholder="Chief Complaint">
+                        </div>
+                        <div class="form-div">
+                            <input type="text" name="" id="history" placeholder="They had a Hx of...">
+                            <input type="text" name="" id="assessment" placeholder="On assessment...">
+                            <input type="text" name="" id="treatment" placeholder="treatment consisted of...">
+                        </div>
+                        <div class="form-div">
+                            <input type="text" name="" id="ptResponse" placeholder="patient response to treatment (leave blank if none)">
+
+                            <button id="GenNarr">Generate Narrative</button>
+                        </div>
+                        
+                        
+                    </form>
+                </div>
+            </div>
+        </div> <!-- end application div -->
+    </div>
+</body>
+</html>
